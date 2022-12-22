@@ -1,0 +1,6 @@
+# Force the version of the javax apis
+javax.servlet s/servlet-api/javax.servlet-api/ jar s/.*/3.1/
+javax.portlet portlet-api jar s/.*/2.0/
+# Convert portals version of the standard apis to the javax apis
+s/org.apache.portals/javax.portlet/ s/portlet-api_2.0_spec/portlet-api/ jar s/.*/2.0/
+

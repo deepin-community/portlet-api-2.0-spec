@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/-(alpha|beta)-/~$1/" \
+  http://svn.apache.org/repos/asf/portals/portlet-spec/tags/ \
+  portlet-api_2.0_spec-(\d.*)/ debian debian/orig-tar.sh
